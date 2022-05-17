@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<title>Devanagari-Transcriptor for Sanskrit</title>
+	<!--- ------------ --->
+	<!--- Formatierung --->
+	<!--- ------------ --->
+	<link rel="stylesheet" type="text/css" href="style.css" >
+	<!--- --------- --->
+	<!--- Scripting --->
+	<!--- --------- --->
+	<script language="javascript" type="text/javascript" src="ELetter.js"></script>
+	<script language="javascript" type="text/javascript" src="CLetter.js"></script>
+	<script language="javascript" type="text/javascript" src="MLetter.js"></script>
+	<script language="javascript" type="text/javascript" src="ParsingException.js"></script>
+	<script language="javascript" type="text/javascript">
+		// ------- //
+		// Klassen //
+		// ------- //
+		// CIndex
+		/// <summary>
+		/// Stellt einen Index dar, deren im "ByRef"-Modus beschrieben werden kann.
+		/// </summary>
+		function CIndex(value){this.Value = value;}
+
+		// -------- //
+		// Methoden //
+		// -------- //
+		// Escape(string)
+		/// <summary>
+		/// Entwertet die enthaltenen Htm-Sonderzeichen zum Htm-Quelltext und liefert die resultierende Zeichenkette.
+		/// </summary>
+		/// <param name="value">Htm-Quelltext.</param>
+		/// <returns>Resultierende Zeichenkette.</returns>
+		function Escape(value)
+		{
+			var rtn = "";
+			for(i = 0; i < value.length; i++)
+			{
+				var chr = value[i];
+				if(chr == "&") chr = "&amp;";
+				rtn += chr;
+			}
+			return rtn;
+		}
+
+		// Transliterate()
+		/// <summary>
+		/// Parsiert den Itm-Quelltext und wendet das Ergebnis für die Devanagari - und Iast-Repräsentation an.
+		/// </summary>
+		function Transliterate()
+		{
+			// Itx-Quellcode holen und wandeln
+			try
+			{
+				var dst = document.getElementById("CDE");
+				var rst = MLetter.FromCode(dst.value.trim() + " ");
+				var htm = "";
+			}
+			catch(err)
+			{
+				if (err instanceof ParsingException)
+				{
+					alert(err.ToHtm());
+					return;
+				}
+				alert(err.message);
+				return
+			}
+
+			// Devanagari anwenden
+			htm = rst.ToHtm().trim();
+			dst = document.getElementById("SNS");
+			dst.innerHTML = htm
+			dst = document.getElementById("SNSHTM");
+			dst.innerHTML = Escape(htm);
+
+			// Iast anwenden
+			htm = rst.ToHtmIast().trim();
+			dst = document.getElementById("TRN");
+			dst.innerHTML = htm;
+			dst = document.getElementById("TRNHTM");
+			dst.innerHTML = Escape(htm);
+		}
+	</script>
+	<script language="javascript" type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function(event) { 
+			document.getElementById('CDE').value = 'svAgatam';
+			document.getElementById("CDE").focus();
+		});
+	</script>
+</head>
+<body onload="Transliterate()" style="background-color: #FFFFFF;">
+<div align="Center">
+<h1 class="Header">Devanagari-Transcriptor for Sanskrit</h1>
+<div style="width: 800px">
+<noscript>
+	<p class="Label" style="color: #DF1F4F">To use this page &#0132;run JavaScript&#0147; must be enabled!</p>
+	<div style="height: 24px"></div>
+</noscript>
+<input type="text" id="CDE" class="Code" style="font-size: 13pt; height: 21px; padding: 3px; width: 780px" onfocus="this.select();"/>
+<div style="height: 6px"></div>
+<input class="Label" onclick="Transliterate()" accesskey="a" type="button" value="Apply" style="margin-left: 680px; width: 120px; height: 36px">
+<div style="height: 18px"></div>
+<hr />
+<div style="height: 6px"></div>
+<textarea id="SNS" class="SanskritBig" readonly="readonly" rows="1" style="height: 192px; padding: 3px; width: 788px"  onfocus="this.select();"></textarea>
+<div style="height: 6px"></div>
+<textarea id="TRN" class="Transliteration" readonly="readonly" rows="1" style="font-size: 11pt; height: 21px; padding: 3px; width: 788px" onfocus="this.select();"></textarea>
+<div style="height: 6px"></div>
+<textarea id="SNSHTM" class="Code" readonly="readonly" rows="1" style="font-size: 13pt; height: 105px; padding: 3px; width: 788px" onfocus="this.select();"></textarea>
+<div style="height: 6px"></div>
+<textarea id="TRNHTM" class="Code" readonly="readonly" rows="1" style="font-size: 13pt; height: 18px; padding: 3px; width: 788px" onfocus="this.select();"></textarea>
+<div style="height: 18px"></div>
+<hr />
+<p class="Label" style="text-align: justify;">
+<b>Instruction for use:</b><br><br>
+Simply enter an valid <a href="Itx.htm" target="_blank">Itx</a> coding and press &#0132;Apply&#0147; or Alt+Shift+A (Firefox) to see the <a href="https://en.wikipedia.org/wiki/Devanagari" target="_blank">Devanagari</a> and <a href="https://en.wikipedia.org/wiki/IAST" target="_blank">Iast</a> representation as well as the Html source code. This version is currently designed for and tested with Firefox 84.0.2 (Mozilla Firefox for Ubuntu &#0150; Canonical &#0150; 1.0) only. Bug-Reports, comments and suggestions are very welcome to <a href="mailto:acamat@web.de">me</a>. This program is inten- ded for public domain use. Enjoy!
+</p>
+<div style="height: 6px"></div>
+<p class="Version" style="text-align: center;">Version: 1.0 (2021-01-12)</p>
+</div>
+</div></body>
+</html>
