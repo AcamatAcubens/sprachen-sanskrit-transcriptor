@@ -38,97 +38,97 @@ var MLetter = new Array(
 	// Buchstaben //
 	// ---------- //
 	// Kurzvokale
-	new CLetter(ELetter.A          ,ELetter.VowelShort,false,   2,'A'          ,'a' ,''        ,'a'       ,'&#2309;'),
-	new CLetter(ELetter.I          ,ELetter.VowelShort,false,   4,'I'          ,'i' ,'&#2367;' ,'i'       ,'&#2311;'),
-	new CLetter(ELetter.U          ,ELetter.VowelShort,false,   6,'U'          ,'u' ,'&#2369;' ,'u'       ,'&#2313;'),
-	new CLetter(ELetter.R          ,ELetter.VowelShort,false,   8,'R'          ,'Rî','&#2371;' ,'&#7771;' ,'&#2315;'),
-	new CLetter(ELetter.L          ,ELetter.VowelShort,false,  10,'L'          ,'Lî','&#2402;' ,'&#7735;' ,'&#2316;'),
+	new CLetter(ELetter.A          ,ELetter.VowelShort,false,   2,'A'          ,'a'  ,''        ,'a'             ,'&#2309;'),
+	new CLetter(ELetter.I          ,ELetter.VowelShort,false,   4,'I'          ,'i'  ,'&#2367;' ,'i'             ,'&#2311;'),
+	new CLetter(ELetter.U          ,ELetter.VowelShort,false,   6,'U'          ,'u'  ,'&#2369;' ,'u'             ,'&#2313;'),
+	new CLetter(ELetter.R          ,ELetter.VowelShort,false,   8,'R'          ,'R^i','&#2371;' ,'&#7771;'       ,'&#2315;'),
+	new CLetter(ELetter.L          ,ELetter.VowelShort,false,  10,'L'          ,'L^i','&#2402;' ,'&#7735;'       ,'&#2316;'),
 	// Langvokale
-	new CLetter(ELetter.Aa         ,ELetter.VowelLong ,false,   3,'Aa'         ,'A' ,'&#2366;' ,'&#0257;' ,'&#2310;'),
-	new CLetter(ELetter.Ii         ,ELetter.VowelLong ,false,   5,'Ii'         ,'I' ,'&#2368;' ,'&#0299;' ,'&#2312;'),
-	new CLetter(ELetter.Uu         ,ELetter.VowelLong ,false,   7,'Uu'         ,'U' ,'&#2370;' ,'&#0363;' ,'&#2314;'),
-	new CLetter(ELetter.Rr         ,ELetter.VowelLong ,false,   9,'Rr'         ,'RÎ','&#2372;' ,'&#7773;' ,'&#2400;'),
-	new CLetter(ELetter.Ll         ,ELetter.VowelLong ,false,  11,'Ll'         ,'LÎ','&#2402;' ,'&#7737;' ,'&#2401;'),
+	new CLetter(ELetter.Aa         ,ELetter.VowelLong ,false,   3,'Aa'         ,'A'  ,'&#2366;' ,'&#0257;'       ,'&#2310;'),
+	new CLetter(ELetter.Ii         ,ELetter.VowelLong ,false,   5,'Ii'         ,'I'  ,'&#2368;' ,'&#0299;'       ,'&#2312;'),
+	new CLetter(ELetter.Uu         ,ELetter.VowelLong ,false,   7,'Uu'         ,'U'  ,'&#2370;' ,'&#0363;'       ,'&#2314;'),
+	new CLetter(ELetter.Rr         ,ELetter.VowelLong ,false,   9,'Rr'         ,'R^I','&#2372;' ,'&#7773;'       ,'&#2400;'),
+	new CLetter(ELetter.Ll         ,ELetter.VowelLong ,false,  11,'Ll'         ,'L^I','&#2402;' ,'&#7737;'       ,'&#2401;'),
 	// Diphtonge
-	new CLetter(ELetter.E          ,ELetter.VowelBi   ,false,  12,'E'          ,'e' ,'&#2375;' ,'e'       ,'&#2319;'),
-	new CLetter(ELetter.Ai         ,ELetter.VowelBi   ,false,  13,'Ai'         ,'ai','&#2376;' ,'ai'      ,'&#2320;'),
-	new CLetter(ELetter.O          ,ELetter.VowelBi   ,false,  14,'O'          ,'o' ,'&#2379;' ,'o'       ,'&#2323;'),
-	new CLetter(ELetter.Au         ,ELetter.VowelBi   ,false,  15,'Au'         ,'au','&#2380;' ,'au'      ,'&#2324;'),
+	new CLetter(ELetter.E          ,ELetter.VowelBi   ,false,  12,'E'          ,'e'  ,'&#2375;' ,'e'             ,'&#2319;'),
+	new CLetter(ELetter.Ai         ,ELetter.VowelBi   ,false,  13,'Ai'         ,'ai' ,'&#2376;' ,'ai'            ,'&#2320;'),
+	new CLetter(ELetter.O          ,ELetter.VowelBi   ,false,  14,'O'          ,'o'  ,'&#2379;' ,'o'             ,'&#2323;'),
+	new CLetter(ELetter.Au         ,ELetter.VowelBi   ,false,  15,'Au'         ,'au' ,'&#2380;' ,'au'            ,'&#2324;'),
 	null, // Schriftzeichen 30 
 	// Velare
-	new CLetter(ELetter.Ka         ,ELetter.Velar     ,false,  18,'Ka'         ,'k' ,'&#2325;' ,'k'       ,null     ),
-	new CLetter(ELetter.Kha        ,ELetter.Velar     ,false,  19,'Kha'        ,'kh','&#2326;' ,'kh'      ,null     ),
-	new CLetter(ELetter.Ga         ,ELetter.Velar     ,false,  20,'Ga'         ,'g' ,'&#2327;' ,'g'       ,null     ),
-	new CLetter(ELetter.Gha        ,ELetter.Velar     ,false,  21,'Gha'        ,'gh','&#2328;' ,'gh'      ,null     ),
-	new CLetter(ELetter.Nga        ,ELetter.Velar     ,false,  22,'Nga'        ,'Ñ' ,'&#2329;' ,'&#7749;' ,null     ),
+	new CLetter(ELetter.Ka         ,ELetter.Velar     ,false,  18,'Ka'         ,'k'  ,'&#2325;' ,'k'             ,null     ),
+	new CLetter(ELetter.Kha        ,ELetter.Velar     ,false,  19,'Kha'        ,'kh' ,'&#2326;' ,'k&#0688;'      ,null     ),
+	new CLetter(ELetter.Ga         ,ELetter.Velar     ,false,  20,'Ga'         ,'g'  ,'&#2327;' ,'g'             ,null     ),
+	new CLetter(ELetter.Gha        ,ELetter.Velar     ,false,  21,'Gha'        ,'gh' ,'&#2328;' ,'g&#0688;'      ,null     ),
+	new CLetter(ELetter.Nga        ,ELetter.Velar     ,false,  22,'Nga'        ,'Ñ'  ,'&#2329;' ,'&#7749;'       ,null     ),
 	// Palatale
-	new CLetter(ELetter.Ca         ,ELetter.Palatal   ,false,  23,'Ca'         ,'ch','&#2330;' ,'c'       ,null     ),
-	new CLetter(ELetter.Cha        ,ELetter.Palatal   ,false,  24,'Cha'        ,'Ch','&#2331;' ,'ch'      ,null     ),
-	new CLetter(ELetter.Ja         ,ELetter.Palatal   ,false,  25,'Ja'         ,'j' ,'&#2332;' ,'j'       ,null     ),
-	new CLetter(ELetter.Jha        ,ELetter.Palatal   ,false,  26,'Jha'        ,'jh','&#2333;' ,'jh'      ,null     ),
-	new CLetter(ELetter.Nya        ,ELetter.Palatal   ,false,  27,'Nya'        ,'ñ' ,'&#2334;' ,'&#0241;' ,null     ),
+	new CLetter(ELetter.Ca         ,ELetter.Palatal   ,false,  23,'Ca'         ,'c'  ,'&#2330;' ,'c'             ,null     ),
+	new CLetter(ELetter.Cha        ,ELetter.Palatal   ,false,  24,'Cha'        ,'ch' ,'&#2331;' ,'c&#0688;'      ,null     ),
+	new CLetter(ELetter.Ja         ,ELetter.Palatal   ,false,  25,'Ja'         ,'j'  ,'&#2332;' ,'j'             ,null     ),
+	new CLetter(ELetter.Jha        ,ELetter.Palatal   ,false,  26,'Jha'        ,'jh' ,'&#2333;' ,'j&#0688;'      ,null     ),
+	new CLetter(ELetter.Nya        ,ELetter.Palatal   ,false,  27,'Nya'        ,'ñ'  ,'&#2334;' ,'&#0241;'       ,null     ),
 	// Retroflexe
-	new CLetter(ELetter.Tta        ,ELetter.Retroflex ,false,  28,'Tta'        ,'T' ,'&#2335;' ,'&#7789;' ,null     ),
-	new CLetter(ELetter.Ttha       ,ELetter.Retroflex ,false,  29,'Ttha'       ,'Th','&#2336;' ,'&#7789;h',null     ),
-	new CLetter(ELetter.Dda        ,ELetter.Retroflex ,false,  30,'Dda'        ,'D' ,'&#2337;' ,'&#7693;' ,null     ),
-	new CLetter(ELetter.Ddha       ,ELetter.Retroflex ,false,  31,'Ddha'       ,'Dh','&#2338;' ,'&#7693;h',null     ),
-	new CLetter(ELetter.Nna        ,ELetter.Retroflex ,false,  32,'Nna'        ,'N' ,'&#2339;' ,'&#7751;' ,null     ),
+	new CLetter(ELetter.Tta        ,ELetter.Retroflex ,false,  28,'Tta'        ,'T'  ,'&#2335;' ,'&#7789;'       ,null     ),
+	new CLetter(ELetter.Ttha       ,ELetter.Retroflex ,false,  29,'Ttha'       ,'Th' ,'&#2336;' ,'&#7789;&#0688;',null     ),
+	new CLetter(ELetter.Dda        ,ELetter.Retroflex ,false,  30,'Dda'        ,'D'  ,'&#2337;' ,'&#7693;'       ,null     ),
+	new CLetter(ELetter.Ddha       ,ELetter.Retroflex ,false,  31,'Ddha'       ,'Dh' ,'&#2338;' ,'&#7693;&#0688;',null     ),
+	new CLetter(ELetter.Nna        ,ELetter.Retroflex ,false,  32,'Nna'        ,'N'  ,'&#2339;' ,'&#7751;'       ,null     ),
 	// Dentale
-	new CLetter(ELetter.Ta         ,ELetter.Dental    ,false,  33,'Ta'         ,'t' ,'&#2340;' ,'t'       ,null     ),
-	new CLetter(ELetter.Tha        ,ELetter.Dental    ,false,  34,'Tha'        ,'th','&#2341;' ,'th'      ,null     ),
-	new CLetter(ELetter.Da         ,ELetter.Dental    ,false,  35,'Da'         ,'d' ,'&#2342;' ,'d'       ,null     ),
-	new CLetter(ELetter.Dha        ,ELetter.Dental    ,false,  36,'Dha'        ,'dh','&#2343;' ,'dh'      ,null     ),
-	new CLetter(ELetter.Na         ,ELetter.Dental    ,false,  37,'Na'         ,'n' ,'&#2344;' ,'n'       ,null     ),
+	new CLetter(ELetter.Ta         ,ELetter.Dental    ,false,  33,'Ta'         ,'t'  ,'&#2340;' ,'t'             ,null     ),
+	new CLetter(ELetter.Tha        ,ELetter.Dental    ,false,  34,'Tha'        ,'th' ,'&#2341;' ,'t&#0688;'      ,null     ),
+	new CLetter(ELetter.Da         ,ELetter.Dental    ,false,  35,'Da'         ,'d'  ,'&#2342;' ,'d'             ,null     ),
+	new CLetter(ELetter.Dha        ,ELetter.Dental    ,false,  36,'Dha'        ,'dh' ,'&#2343;' ,'d&#0688;'      ,null     ),
+	new CLetter(ELetter.Na         ,ELetter.Dental    ,false,  37,'Na'         ,'n'  ,'&#2344;' ,'n'             ,null     ),
 	// Labiale
-	new CLetter(ELetter.Pa         ,ELetter.Labial    ,false,  38,'Pa'         ,'p' ,'&#2346;' ,'p'       ,null     ),
-	new CLetter(ELetter.Pha        ,ELetter.Labial    ,false,  39,'Pha'        ,'ph','&#2347;' ,'ph'      ,null     ),
-	new CLetter(ELetter.Ba         ,ELetter.Labial    ,false,  40,'Ba'         ,'b' ,'&#2348;' ,'b'       ,null     ),
-	new CLetter(ELetter.Bha        ,ELetter.Labial    ,false,  41,'Bha'        ,'bh','&#2349;' ,'bh'      ,null     ),
-	new CLetter(ELetter.Ma         ,ELetter.Labial    ,false,  42,'Ma'         ,'m' ,'&#2350;' ,'m'       ,null     ),
+	new CLetter(ELetter.Pa         ,ELetter.Labial    ,false,  38,'Pa'         ,'p'  ,'&#2346;' ,'p'             ,null     ),
+	new CLetter(ELetter.Pha        ,ELetter.Labial    ,false,  39,'Pha'        ,'ph' ,'&#2347;' ,'p&#0688;'      ,null     ),
+	new CLetter(ELetter.Ba         ,ELetter.Labial    ,false,  40,'Ba'         ,'b'  ,'&#2348;' ,'b'             ,null     ),
+	new CLetter(ELetter.Bha        ,ELetter.Labial    ,false,  41,'Bha'        ,'bh' ,'&#2349;' ,'b&#0688;'      ,null     ),
+	new CLetter(ELetter.Ma         ,ELetter.Labial    ,false,  42,'Ma'         ,'m'  ,'&#2350;' ,'m'             ,null     ),
 	// Halbvokale
-	new CLetter(ELetter.Ya         ,ELetter.VowelSemi ,false,  43,'Ya'         ,'y' ,'&#2351;' ,'y'       ,null     ),
-	new CLetter(ELetter.Ra         ,ELetter.VowelSemi ,false,  44,'Ra'         ,'r' ,'&#2352;' ,'r'       ,null     ),
-	new CLetter(ELetter.La         ,ELetter.VowelSemi ,false,  45,'La'         ,'l' ,'&#2354;' ,'l'       ,null     ),
-	new CLetter(ELetter.Va         ,ELetter.VowelSemi ,false,  46,'Va'         ,'v' ,'&#2357;' ,'v'       ,null     ),
+	new CLetter(ELetter.Ya         ,ELetter.VowelSemi ,false,  43,'Ya'         ,'y'  ,'&#2351;' ,'y'             ,null     ),
+	new CLetter(ELetter.Ra         ,ELetter.VowelSemi ,false,  44,'Ra'         ,'r'  ,'&#2352;' ,'r'             ,null     ),
+	new CLetter(ELetter.La         ,ELetter.VowelSemi ,false,  45,'La'         ,'l'  ,'&#2354;' ,'l'             ,null     ),
+	new CLetter(ELetter.Va         ,ELetter.VowelSemi ,false,  46,'Va'         ,'v'  ,'&#2357;' ,'v'             ,null     ),
 	null, // Schriftzeichen 60
 	// Frikative
-	new CLetter(ELetter.Sha        ,ELetter.Fricative ,false,  47,'Sha'        ,'sh','&#2358;' ,'&#0347;' ,null     ),
-	new CLetter(ELetter.Ssa        ,ELetter.Fricative ,false,  48,'Ssa'        ,'Sh','&#2359;' ,'&#7779;' ,null     ),
-	new CLetter(ELetter.Sa         ,ELetter.Fricative ,false,  49,'Sa'         ,'s' ,'&#2360;' ,'s'       ,null     ),
+	new CLetter(ELetter.Sha        ,ELetter.Fricative ,false,  47,'Sha'        ,'sh' ,'&#2358;' ,'&#0347;'       ,null     ),
+	new CLetter(ELetter.Ssa        ,ELetter.Fricative ,false,  48,'Ssa'        ,'Sh' ,'&#2359;' ,'&#7779;'       ,null     ),
+	new CLetter(ELetter.Sa         ,ELetter.Fricative ,false,  49,'Sa'         ,'s'  ,'&#2360;' ,'s'             ,null     ),
 	null, // Schriftzeichen 64
-	new CLetter(ELetter.Ha         ,ELetter.Fricative ,false,  50,'Ha'         ,'h' ,'&#2361;' ,'h'       ,null     ),
+	new CLetter(ELetter.Ha         ,ELetter.Fricative ,false,  50,'Ha'         ,'h'  ,'&#2361;' ,'h'             ,null     ),
 	// ---------------- //
 	// Funktionszeichen //
 	// ---------------- //
-	new CLetter(ELetter.Virama     ,ELetter.Sign      ,false,null,'Virama'     ,' ' ,'&#2381;' ,''        ,null     ),
-	new CLetter(ELetter.Hiatus     ,ELetter.Sign      ,false,   0,'Hiatus'     ,' ' ,' '       ,' '       ,null     ),
-	new CLetter(ELetter.Avagraha   ,ELetter.Sign      ,false,   1,'Avagraha'   ,'.a','&#2365;' ,'\''      ,null     ),
-	new CLetter(ELetter.Anusvara   ,ELetter.Sign      ,false,  16,'Anusvara'   ,'M' ,'&#2306;' ,'&#7747;' ,null     ),
-	new CLetter(ELetter.Visarga    ,ELetter.Sign      ,false,  17,'Visarga'    ,'H' ,'&#2307;' ,'&#7717;' ,null     ),
-	new CLetter(ELetter.Anunasika  ,ELetter.Sign      ,false,  51,'Anunasika'  ,'.N','&#2305;' ,'&#61761;',null     ),
+	new CLetter(ELetter.Virama     ,ELetter.Sign      ,false,null,'Virama'     ,' '  ,'&#2381;' ,''              ,null     ),
+	new CLetter(ELetter.Hiatus     ,ELetter.Sign      ,false,   0,'Hiatus'     ,' '  ,' '       ,' '             ,null     ),
+	new CLetter(ELetter.Avagraha   ,ELetter.Sign      ,false,   1,'Avagraha'   ,'.a' ,'&#2365;' ,'\''            ,null     ),
+	new CLetter(ELetter.Anusvara   ,ELetter.Sign      ,false,  16,'Anusvara'   ,'M'  ,'&#2306;' ,'&#7747;'       ,null     ),
+	new CLetter(ELetter.Visarga    ,ELetter.Sign      ,false,  17,'Visarga'    ,'H'  ,'&#2307;' ,'&#7717;'       ,null     ),
+	new CLetter(ELetter.Anunasika  ,ELetter.Sign      ,false,  51,'Anunasika'  ,'.N' ,'&#2305;' ,'&#61761;'      ,null     ),
 	// ------- //
 	// Ziffern //
 	// ------- //
-	new CLetter(ELetter.Digit0     ,ELetter.Digit     ,false,null,'Digit0'     ,'0' ,'&#2406;' ,'0'       ,null     ),
-	new CLetter(ELetter.Digit1     ,ELetter.Digit     ,false,null,'Digit1'     ,'1' ,'&#2407;' ,'1'       ,null     ),
-	new CLetter(ELetter.Digit2     ,ELetter.Digit     ,false,null,'Digit2'     ,'2' ,'&#2408;' ,'2'       ,null     ),
-	new CLetter(ELetter.Digit3     ,ELetter.Digit     ,false,null,'Digit3'     ,'3' ,'&#2409;' ,'3'       ,null     ),
-	new CLetter(ELetter.Digit4     ,ELetter.Digit     ,false,null,'Digit4'     ,'4' ,'&#2410;' ,'4'       ,null     ),
-	new CLetter(ELetter.Digit5     ,ELetter.Digit     ,false,null,'Digit5'     ,'5' ,'&#2411;' ,'5'       ,null     ),
-	new CLetter(ELetter.Digit6     ,ELetter.Digit     ,false,null,'Digit6'     ,'6' ,'&#2412;' ,'6'       ,null     ),
-	new CLetter(ELetter.Digit7     ,ELetter.Digit     ,false,null,'Digit7'     ,'7' ,'&#2413;' ,'7'       ,null     ),
-	new CLetter(ELetter.Digit8     ,ELetter.Digit     ,false,null,'Digit8'     ,'8' ,'&#2414;' ,'8'       ,null     ),
-	new CLetter(ELetter.Digit9     ,ELetter.Digit     ,false,null,'Digit9'     ,'9' ,'&#2415;' ,'9'       ,null     ),
+	new CLetter(ELetter.Digit0     ,ELetter.Digit     ,false,null,'Digit0'     ,'0'  ,'&#2406;' ,'0'             ,null     ),
+	new CLetter(ELetter.Digit1     ,ELetter.Digit     ,false,null,'Digit1'     ,'1'  ,'&#2407;' ,'1'             ,null     ),
+	new CLetter(ELetter.Digit2     ,ELetter.Digit     ,false,null,'Digit2'     ,'2'  ,'&#2408;' ,'2'             ,null     ),
+	new CLetter(ELetter.Digit3     ,ELetter.Digit     ,false,null,'Digit3'     ,'3'  ,'&#2409;' ,'3'             ,null     ),
+	new CLetter(ELetter.Digit4     ,ELetter.Digit     ,false,null,'Digit4'     ,'4'  ,'&#2410;' ,'4'             ,null     ),
+	new CLetter(ELetter.Digit5     ,ELetter.Digit     ,false,null,'Digit5'     ,'5'  ,'&#2411;' ,'5'             ,null     ),
+	new CLetter(ELetter.Digit6     ,ELetter.Digit     ,false,null,'Digit6'     ,'6'  ,'&#2412;' ,'6'             ,null     ),
+	new CLetter(ELetter.Digit7     ,ELetter.Digit     ,false,null,'Digit7'     ,'7'  ,'&#2413;' ,'7'             ,null     ),
+	new CLetter(ELetter.Digit8     ,ELetter.Digit     ,false,null,'Digit8'     ,'8'  ,'&#2414;' ,'8'             ,null     ),
+	new CLetter(ELetter.Digit9     ,ELetter.Digit     ,false,null,'Digit9'     ,'9'  ,'&#2415;' ,'9'             ,null     ),
 	// ------------- //
 	// Sonderzeichen //
 	// ------------- //
-	new CLetter(ELetter.Om         ,ELetter.Special   ,false,null,'Om'         ,'OM','&#2384;' ,'om'      ,null     ),
-	new CLetter(ELetter.Danda      ,ELetter.Special   ,false,null,'Danda'      ,'.' ,'&#2404;' ,'.'       ,null     ),
-	new CLetter(ELetter.DoubleDanda,ELetter.Special   ,false,null,'DoubleDanda','..','&#2405;' ,'..'      ,null     ),
-	new CLetter(ELetter.Hyphen     ,ELetter.Special   ,false,null,'Hyphen'     ,'-' ,''        ,'&#8208;' ,null     ),
-	new CLetter(ELetter.MiddleDot  ,ELetter.Special   ,false,null,'MiddleDot'  ,'·' ,''        ,'&#0183;' ,null     ),
-	new CLetter(ELetter.ShortE     ,ELetter.Special   ,false,null,'Short E'    ,'E' ,'&#2374;' ,'&#0277;' ,'&#2318;'),
-	new CLetter(ELetter.ShortO     ,ELetter.Special   ,false,null,'Short O'    ,'O' ,'&#2378;' ,'&#0335;' ,'&#2322;')
+	new CLetter(ELetter.Om         ,ELetter.Special   ,false,null,'Om'         ,'OM' ,'&#2384;' ,'om'            ,null     ),
+	new CLetter(ELetter.Danda      ,ELetter.Special   ,false,null,'Danda'      ,'.'  ,'&#2404;' ,'.'             ,null     ),
+	new CLetter(ELetter.DoubleDanda,ELetter.Special   ,false,null,'DoubleDanda','..' ,'&#2405;' ,'..'            ,null     ),
+	new CLetter(ELetter.Hyphen     ,ELetter.Special   ,false,null,'Hyphen'     ,'-'  ,''        ,'&#8208;'       ,null     ),
+	new CLetter(ELetter.MiddleDot  ,ELetter.Special   ,false,null,'MiddleDot'  ,'·'  ,''        ,'&#0183;'       ,null     ),
+	new CLetter(ELetter.ShortE     ,ELetter.Special   ,false,null,'Short E'    ,'E'  ,'&#2374;' ,'&#0277;'       ,'&#2318;'),
+	new CLetter(ELetter.ShortO     ,ELetter.Special   ,false,null,'Short O'    ,'O'  ,'&#2378;' ,'&#0335;'       ,'&#2322;')
 )
 {
 	// -------- //
@@ -854,30 +854,6 @@ var MLetter = new Array(
 				// Unerwartetes Zeichen verarbeiten
 				throw new ParsingException("Character ' ', 'N', 'a', or '.' expected.", code, header.Value);
 
-			// -------------------- //
-			// Schriftzeichen "Cha" //
-			// -------------------- //
-			case "C":
-
-				// Gültige Zeichenkettenlänge sicherstellen
-				if(header.Value > code.length - 2)
-					throw new Error("Unexpected end of string.");
-
-				// Lesekopf fortschreiten
-				header.Value++; // "C"
-
-				// Schriftzeichen "Cha" verarbeiten
-				if(code[header.Value] == "h")
-				{
-					itemSet.push(MLetter[ELetter.Cha]);
-					header.Value++; // "h"
-					m_AppendVowel(code, header, itemSet);
-					return;
-				}
-
-				// Unerwartetes Zeichen verarbeiten
-				throw new ParsingException("Character 'h' expected.", code, header.Value);
-
 			// ------------------------------- //
 			// Schriftzeichen "Dda" und "Ddha" //
 			// ------------------------------- //
@@ -995,9 +971,9 @@ var MLetter = new Array(
 				m_AppendVowel(code, header, itemSet);
 				return;
 
-			// ------------------- //
-			// Schriftzeichen "Ca" //
-			// ------------------- //
+			// ----------------------------- //
+			// Schriftzeichen "Ca" und "Cha" //
+			// ----------------------------- //
 			case "c":
 
 				// Lesekopf fortschreiten
@@ -1012,8 +988,10 @@ var MLetter = new Array(
 					return;
 				}
 
-				// Unerwartetes Zeichen verarbeiten
-				throw new ParsingException("Character 'h' expected.", code, header.Value);
+				// Schriftzeichen anfügen
+				itemSet.push(MLetter[ELetter.Cha]);
+				m_AppendVowel(code, header, itemSet);
+				return;
 
 			// ----------------------------- //
 			// Schriftzeichen "Da" und "Dha" //
@@ -1387,28 +1365,10 @@ var MLetter = new Array(
 				header.Value++; // "L"
 				chr = code[header.Value];
 
-				// Schriftzeichen "L" verarbeiten
-				// TODO: Klären, warum "î" nicht erkannt wird.
-				if(chr == "î")
-				{
-					itemSet.push(MLetter[ELetter.L]);
-					header.Value++; // "î"
-					return;
-				}
-
-				// Schriftzeichen "Ll" verarbeiten
-				// TODO: Klären, warum "Î" nicht erkannt wird.
-				if(chr == "Î")
-				{
-					itemSet.push(MLetter[ELetter.Ll]);
-					header.Value++; // "Î"
-					return;
-				}
-
 				// Nachfolgendes "L|^" sicherstellen
-				if(chr != "L" && chr != "^")
-					throw new ParsingException("Character 'L' or '^' expected.", code, header.Value);
-				header.Value++; // "^|L"
+				if(chr != "^")
+					throw new ParsingException("Character '^' expected.", code, header.Value);
+				header.Value++; // "^"
 				chr = code[header.Value];
 
 				// Schriftzeichen "L" verarbeiten
@@ -1441,27 +1401,9 @@ var MLetter = new Array(
 				header.Value++; // "R"
 				chr = code[header.Value];
 
-				// Schriftzeichen "R" verarbeiten
-				// TODO: Klären, warum "î" nicht erkannt wird.
-				if(chr == "î")
-				{
-					itemSet.push(MLetter[ELetter.R]);
-					header.Value++; // "î"
-					return;
-				}
-
-				// Schriftzeichen "Rr" verarbeiten
-				// TODO: Klären, warum "Î" nicht erkannt wird.
-				if(chr == "Î")
-				{
-					itemSet.push(MLetter[ELetter.Rr]);
-					header.Value++; // "Î"
-					return;
-				}
-
 				// Nachfolgendes "R|^" sicherstellen
-				if(chr != "R" && chr != "^")
-					throw new ParsingException("Character 'R' or '^' expected.", code, header.Value);
+				if(chr != "^")
+					throw new ParsingException("Character '^' expected.", code, header.Value);
 				header.Value++; // "R|^"
 				chr = code[header.Value];
 

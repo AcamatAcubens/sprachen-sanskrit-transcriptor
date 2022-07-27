@@ -130,4 +130,3 @@ var ELetter = new Object()
 	ELetter.ShortE      = 87; // Schriftzeichen kurzes E
 	ELetter.ShortO      = 88; // Schriftzeichen kurzes O
 };
-
