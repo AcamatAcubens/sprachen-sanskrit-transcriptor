@@ -1,6 +1,6 @@
 // <author>Carsten Alexander</author>
 // <project>Sankrit</project>
-// <version>1.0 (2021-02-10)</version>
+// <version>1.0 (2022-07-27)</version>
 // <license>public domain</license>
 // <mailto>sanskrit ~At~ acamat ~Dot~ de</mailto>
 // ---
@@ -982,14 +982,14 @@ var MLetter = new Array(
 				// Schriftzeichen "Ca" verarbeiten
 				if(code[header.Value] == "h")
 				{
-					itemSet.push(MLetter[ELetter.Ca]);
+					itemSet.push(MLetter[ELetter.Cha]);
 					header.Value++; // "h"
 					m_AppendVowel(code, header, itemSet);
 					return;
 				}
 
 				// Schriftzeichen anfügen
-				itemSet.push(MLetter[ELetter.Cha]);
+				itemSet.push(MLetter[ELetter.Ca]);
 				m_AppendVowel(code, header, itemSet);
 				return;
 

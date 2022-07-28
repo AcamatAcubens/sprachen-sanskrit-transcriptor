@@ -1,6 +1,6 @@
 // <author>Carsten Alexander</author>
 // <project>Sankrit</project>
-// <version>0.5 (2013-06-11)</version>
+// <version>1.0 (2022-07-27)</version>
 // <license>public domain</license>
 // <mailto>sanskrit ~At~ acamat ~Dot~ de</mailto>
 // ---
